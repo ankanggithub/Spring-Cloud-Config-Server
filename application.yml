@@ -1,0 +1,18 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+---
+server:
+  port: 18081
+spring:
+  profiles: user
+  application:
+    name: springcloud-config-user
+---
+server:
+  port: 28081
+spring:
+  profiles: item
+  application:
+    name: springcloud-config-item
